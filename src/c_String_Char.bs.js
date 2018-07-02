@@ -6,7 +6,11 @@ var name = "Ashish";
 
 var sentense = "My name is " + (String(name) + "");
 
+var helloWorld = "你好，" + (String(name) + "");
+
 console.log(sentense);
+
+console.log(helloWorld);
 
 console.log(/* "a" */97);
 
@@ -54,12 +58,16 @@ var greetings = "Hello world!";
 
 var greetingAndOneSlash = "Hello\r\n    World\r\n    \\\r\n    Hehe...\r\n";
 
+var world = "世界";
+
 var theChar = /* "a" */97;
 
 exports.greetings = greetings;
 exports.greetingAndOneSlash = greetingAndOneSlash;
 exports.name = name;
 exports.sentense = sentense;
+exports.world = world;
+exports.helloWorld = helloWorld;
 exports.theChar = theChar;
 exports.isVowel = isVowel;
 /* sentense Not a pure module */

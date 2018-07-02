@@ -25,16 +25,27 @@ var someHorsePower = /* record */[
   /* metric */true
 ];
 
-var me = /* record */[
-  /* age */20,
-  /* name */"Big Reason"
-];
+function getAge(entity) {
+  return entity[/* age */0];
+}
 
 var metric = true;
 
-exports.me = me;
+var kraken = /* record */[
+  /* age */9999,
+  /* hasTentacles */true
+];
+
+var me = /* record */[
+  /* age */5,
+  /* name */"Baby Reason"
+];
+
 exports.meNextYear = meNextYear;
 exports.baby = baby;
 exports.metric = metric;
 exports.someHorsePower = someHorsePower;
+exports.getAge = getAge;
+exports.kraken = kraken;
+exports.me = me;
 /*  Not a pure module */

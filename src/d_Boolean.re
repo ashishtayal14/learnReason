@@ -1,6 +1,6 @@
 
-/* ==: structural equal, compares data structures deeply: (1, 2) == (1, 2) is true. Convenient, but use with caution
-===: referential equal, compares shallowly. (1, 2) === (1, 2) is false. let myTuple = (1, 2); myTuple === myTuple is true. */
+/* ==: structural equals or deep equals, compares data structures deeply: (1, 2) == (1, 2) is true. Convenient, but use with caution
+===: referential equals, compares shallowly. (1, 2) === (1, 2) is false. let myTuple = (1, 2); myTuple === myTuple is true. */
 
 let firstTupple = (1,2);
 let secondTupple = (1,2);

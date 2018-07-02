@@ -1,5 +1,9 @@
 
 /*"Immutable" as in, "doesn't change". Once a binding refers to a value, it cannot refer to anything else (unless it explicitly contains a mutable value, discussed later). However, you may create a new binding of the same name which shadows the previous binding; from that point onward, the binding will refer to the newly assigned value.*/
+/*  
+    -Immutable
+    -Block Scope
+*/
 let message = "hello";
 print_endline(message); /* Prints "hello" */
 let message = "bye";

@@ -2,14 +2,17 @@
 'use strict';
 
 var Curry = require("bs-platform/lib/js/curry.js");
+var Caml_oo_curry = require("bs-platform/lib/js/caml_oo_curry.js");
 var CamlinternalOO = require("bs-platform/lib/js/camlinternalOO.js");
+
+var shared = ["hasEnvy"];
 
 var $$class = CamlinternalOO.create_table(["drive"]);
 
 var ids = CamlinternalOO.new_methods_variables($$class, [
       "enableEnvy",
       "drive"
-    ], ["hasEnvy"]);
+    ], shared);
 
 var enableEnvy = ids[0];
 
@@ -38,7 +41,55 @@ function obj_init() {
 
 CamlinternalOO.init_class($$class);
 
-var obj = obj_init(0);
+obj_init(0);
+
+var $$class$1 = CamlinternalOO.create_table([
+      "drive",
+      "doYouWant"
+    ]);
+
+var ids$1 = CamlinternalOO.new_methods_variables($$class$1, [
+      "enableEnvy",
+      "drive",
+      "doYouWant"
+    ], shared);
+
+var enableEnvy$1 = ids$1[0];
+
+var drive$1 = ids$1[1];
+
+var doYouWant = ids$1[2];
+
+var hasEnvy$1 = ids$1[3];
+
+CamlinternalOO.set_methods($$class$1, /* array */[
+      drive$1,
+      (function (self$2, speed) {
+          Curry._2(self$2[0][enableEnvy$1], self$2, true);
+          return speed;
+        }),
+      doYouWant,
+      (function (self$2, _) {
+          return self$2[hasEnvy$1][0];
+        }),
+      enableEnvy$1,
+      (function (self$2, envy) {
+          self$2[hasEnvy$1][0] = envy;
+          return /* () */0;
+        })
+    ]);
+
+function obj_init$1() {
+  var self = CamlinternalOO.create_object_opt(0, $$class$1);
+  self[hasEnvy$1] = [false];
+  return self;
+}
+
+CamlinternalOO.init_class($$class$1);
+
+var obj = obj_init$1(0);
+
+Caml_oo_curry.js2(560807940, 1, obj, /* () */0);
 
 exports.obj = obj;
 /* class Not a pure module */

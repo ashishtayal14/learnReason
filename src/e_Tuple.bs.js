@@ -4,6 +4,8 @@
 
 console.log(20.0);
 
+console.log(20.0);
+
 function getCenterCoordinates() {
   return /* tuple */[
           10,
@@ -18,7 +20,15 @@ console.log(/* tuple */[
 
 var isInteger = true;
 
+var isList = true;
+
 console.log(isInteger);
+
+var tupleWithInferedTypes = /* tuple */[
+  23123.32,
+  "Lalit",
+  /* "M" */77
+];
 
 var ageAndName = /* tuple */[
   24,
@@ -37,11 +47,16 @@ var y = 30.5;
 
 var z = 100.0;
 
+var a = 20.0;
+
+exports.tupleWithInferedTypes = tupleWithInferedTypes;
 exports.ageAndName = ageAndName;
 exports.my3dCoordinates = my3dCoordinates;
 exports.x = x;
 exports.y = y;
 exports.z = z;
+exports.a = a;
 exports.getCenterCoordinates = getCenterCoordinates;
 exports.isInteger = isInteger;
+exports.isList = isList;
 /*  Not a pure module */
