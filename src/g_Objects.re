@@ -36,3 +36,12 @@ let obj: tesla1({. drive: int => int, doYouWant: unit => bool}) = {
 };
 
 obj#doYouWant();
+
+
+/* Record vs Object in reason */ 
+let myObj = {"name":"ashish"};
+Js.log(myObj##name);
+let myname = myObj##name; 
+
+type myObjType = {name:string};
+let myObj1 = {name:"tushar"};
