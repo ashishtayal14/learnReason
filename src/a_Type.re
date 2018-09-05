@@ -61,6 +61,8 @@ let buddy: coordinates(float) = (10.5, 20.5, 20.5);
 
 /* If types didn't accept parameters (ie, if we didn't have "type functions"), the standard library would need to define the types listOfString, listOfInt, listOfTuplesOfInt, etc. */
 
+/* These types are generaly used to define records of different sub-types*/
+
 /* PREDEFINED GENERIC TYPES
     list('a)
     array('a)

@@ -15,6 +15,7 @@ let anotherList = [0, ...myList];
 /* --ARRAY-- */
 
 /* 
+    -Homogeneous
     -Mutable
     -Fast at random access & updates
     -Fix-sized on native (flexibly sized on JavaScript) 

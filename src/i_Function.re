@@ -154,6 +154,10 @@ let drawCircle = (~color, ~radius=?, ()) => {
 
 NOTE: None | Some(foo) is a data structure type called variant, described earlier. This particular variant type is provided by the standard library. It's called option. Its definition: type option('a) = None | Some('a).
 
+/* -- Implicit Currying -- */
+
+This means that there is an implicit currying applied to each function and you call any function is currying style.
+
 NOTE the unit () at the end of drawCircle. Without it, since radius and color are both labeled, can be curried, and can be applied out-of-order, it's unclear what the following means: */
 
 let color = "red";
